@@ -3,4 +3,4 @@ RMPipeline
 
 RepeatMasker Analysis Pipeline
 
-Quan
+Authors: Quan Fang, Chris Botka, Greg Cavanagh, Amir Karger
