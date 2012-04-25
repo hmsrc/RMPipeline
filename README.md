@@ -32,19 +32,20 @@ Contact: Christopher_Botka@hms.harvard.edu
                 RMFamily     = Directory to place repeat families
                 RMSuper      = Directory to place repeat super families
                 RMSub        = Directory to place repeat sub families            
-    (4) loginfo:
+    (4) logfile:
+    
         RepeatMasker raw results directory: RepeatMasker_orchestra/
         MasterFile.out done
         Your source MasterFile.out file
-        Output folder: RMFA/
+        Output folder: RMFamily/
         RMFamily done
         
-        Your source RepeatMaskerFamily directory: RMFA/
-        Your output RepeatMaskerSuperFamily directory: RMS
+        Your source RepeatMaskerFamily directory: RMFamily/
+        Your output RepeatMaskerSuperFamily directory: RMSuper
         RMSuperFamily done
 
-        Your source RepeatMaskerFamily directory: RMFA/
-        Your output RepeatMaskerSubFamily directory: RMs        
+        Your source RepeatMaskerFamily directory: RMFamily/
+        Your output RepeatMaskerSubFamily directory: RMSub        
         RMSubFamily done
 
 
