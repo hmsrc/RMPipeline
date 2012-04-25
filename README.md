@@ -25,17 +25,19 @@ Contact: Christopher_Botka@hms.harvard.edu
 ======================
 
 2.1 family_cli.pl 
+
+(1) concatenates repeatmasker .out resutls into a master file, named MasterFile.out
+
+(2) categorize repeats into families, superfamilies and subfamilies. 
     
-    (1) concatenates repeatmasker .out resutls into a master file, named MasterFile.out
-    (2) categorize repeats into families, superfamilies and subfamilies. 
-    (3) usage:
+    usage:
         
         user@orchestra$ perl family_cli.pl -r RepeatMasker -f RMFamily -S RMSuper -s RMSub         
                 RepeatMasker = RepeatMasker raw outputs directory
                 RMFamily     = Directory to place repeat families
                 RMSuper      = Directory to place repeat super families
                 RMSub        = Directory to place repeat sub families            
-    (4) logfile:
+    logfile:
     
         RepeatMasker raw results directory: RepeatMasker_orchestra/
         MasterFile.out done
