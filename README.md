@@ -24,7 +24,7 @@ Contact: Christopher_Botka@hms.harvard.edu
 2, Functional scripts 
 ======================
 
-2.1 family_cli.pl 
+2.1 family_cli.pl ((This file is not published yet))
 
 (1) concatenates repeatmasker .out resutls into a master file, named MasterFile.out
 
@@ -52,7 +52,7 @@ Contact: Christopher_Botka@hms.harvard.edu
         Your output RepeatMaskerSubFamily directory: RMSub        
         RMSubFamily done
 
-2.2 GC_cli.pl
+2.2 GC_cli.pl (This file is not published yet)
 
 Extracts all the repeats sequence from original supercontigs. Mainly for GC contents
 
@@ -66,7 +66,7 @@ Extracts all the repeats sequence from original supercontigs. Mainly for GC cont
         Output              = [Optional] Output directory
         
     
-2.3 tbl.pl
+2.3 tbl.pl (published April 25)
 
 Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl
     
