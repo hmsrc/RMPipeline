@@ -54,6 +54,7 @@ Contact: Christopher_Botka@hms.harvard.edu
         RMSubFamily done
 
 2.2 GC_cli.pl (This file is not published yet)
+----------------------------------------------
 
 Extracts all the repeats sequence from original supercontigs. Mainly for GC contents
 
@@ -67,6 +68,7 @@ Extracts all the repeats sequence from original supercontigs. Mainly for GC cont
         
     
 2.3 tbl.pl (published April 25)
+-------------------------------
 
 Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl
     
