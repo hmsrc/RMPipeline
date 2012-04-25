@@ -22,6 +22,7 @@ Contact: Christopher_Botka@hms.harvard.edu
 ======================
 
 2.1 family_cli.pl 
+    
     (1) concatenates repeatmasker .out resutls into a master file, named MasterFile.out
     (2) categorize repeats into families, superfamilies and subfamilies. 
     (3) usage:
