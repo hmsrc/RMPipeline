@@ -18,15 +18,38 @@ Contact: Christopher_Botka@hms.harvard.edu
 
 
 ======================
-2, Functionality 
+2, Functional scripts 
 ======================
 
-2.1 family_cli.pl concatenates 
-
-
-user@orchestra$ perl family_cli.pl -r RepeatMasker -f RMFamily -S RMSuper -s RMSub 
+2.1 family_cli.pl 
+    (1) concatenates repeatmasker .out resutls into a master file, named MasterFile.out
+    (2) categorize repeats into families, superfamilies and subfamilies. 
+    (3) usage:
         
-    RepeatMasker = RepeatMasker raw outputs directory
-    RMFamily     = Directory to place repeat families
-    RMSuper      = Directory to place repeat super families
-    RMSub        = Directory to place repeat sub families
+        user@orchestra$ perl family_cli.pl -r RepeatMasker -f RMFamily -S RMSuper -s RMSub         
+                RepeatMasker = RepeatMasker raw outputs directory
+                RMFamily     = Directory to place repeat families
+                RMSuper      = Directory to place repeat super families
+                RMSub        = Directory to place repeat sub families            
+    (4) loginfo:
+        RepeatMasker raw results directory: RepeatMasker_orchestra/
+        MasterFile.out done
+        Your source MasterFile.out file
+        Output folder: RMFA/
+        RMFamily done
+        
+        Your source RepeatMaskerFamily directory: RMFA/
+        Your output RepeatMaskerSuperFamily directory: RMS
+        RMSuperFamily done
+
+        Your source RepeatMaskerFamily directory: RMFA/
+        Your output RepeatMaskerSubFamily directory: RMs        
+        RMSubFamily done
+
+
+
+
+
+
+
+
