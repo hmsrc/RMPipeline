@@ -59,11 +59,10 @@ Extracts all the repeats sequence from original supercontigs. Mainly for GC cont
     usage:
     
         user@orchestra$ perl GC_cli.pl -M Masterfile -F Superfasta -f FamilyCategory -O Output 
-    
-        Masterfile          = Masterfile of the species, under RM raw directory
-        Superfasta          = Source genome data, in fasta Format
-        FamilyCategory      = [Optional] Editable family categorization file, based on user's knowledge
-        Output              = [Optional] Output directory
+            Masterfile          = Masterfile of the species, under RM raw directory
+            Superfasta          = Source genome data, in fasta Format
+            FamilyCategory      = [Optional] Editable family categorization file, based on user's knowledge
+            Output              = [Optional] Output directory
         
     
 2.3 tbl.pl (published April 25)
@@ -73,6 +72,8 @@ Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl
     usage:
     
         user@orchestra$ perl tbl.pl -r RepeatMasker  
+            RepeatMasker = RepeatMasker raw outputs directory
+            MasterFile.tbl will be created under the RepeatMasker directory
         
     MasterFile.tbl:
     
