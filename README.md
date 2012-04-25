@@ -18,11 +18,9 @@ Contact: Christopher_Botka@hms.harvard.edu
 1, General background
 ======================
 
-Global annotation and molecular evolutionary analysis of genomic repeats in the Painted Turtle, Chrysemys picta.
+[Poster] Global annotation and molecular evolutionary analysis of genomic repeats in the Painted Turtle, Chrysemys picta.
 
-Quan Fang1,2, Christopher Botka2 and Andrew Shedlock3
-
-1Boston University, Bioinformatics Graduate Program, 2Harvard Medical School, Research Computing, 3College of Charleston, Biology Department, MUSC-HML
+Quan Fang, Christopher Botka and Andrew Shedlock
 
 
 
