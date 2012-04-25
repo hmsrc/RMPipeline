@@ -38,42 +38,6 @@ else
     &Help();
 }
 
-=cut
-Please select mode:
-1) MasterFile;
-2) RepeatMaskerFamily;
-3) RepeatMaskerSuperFamily;
-4) RepeatMaskerSubFamily;
-5) Exit;
-
-
-if ($mode == 1)
-{
-   &WriteMasterFile($repeatmaskerfolder);
-}  
-
-if ($mode == 2)
-{
-    &RepeatMaskerFamily("$repeatmaskerfolder/MasterFile.out",$repeatmaskerfamily);
-}
-
-
-if ($mode == 3)
-{
-    &RepeatMaskerSuperFamily($repeatmaskerfamily,$repeatmaskersuperfamily);
-}
-
-if ($mode == 4)
-{
-    &RepeatMaskerSubFamily($repeatmaskerfamily,$repeatmaskersubfamily);
-}
-
-if ($mode == 5)
-{
-    exit;
-}
-=cut 
-
 ###################################################################
 ### 1) Create MasterFile.out
 ### You will be asked RepeatMasker raw results directory
@@ -94,7 +58,7 @@ sub WriteMasterFile
             if ( $firstline =~ /SW/ && $firstline =~ /perc/ && $firstline =~ /query/ )
             {
                 $file = $RM_dir."/".$file;
-                print $file."\n";
+                #print $file."\n";
                 open (FH, $file) or die "can't open $file";
                 {
                     my $line = <FH>; ## remove the first 3 lines 
@@ -128,7 +92,7 @@ sub RepeatMaskerFamily
     
     my $directory;
     chomp ($directory  = $_[1]);
-    print "\nOutput folder: $directory\n";
+    print "Output folder: $directory\n";
 
     #my $MasterFile = "/groups/ritg/repeats/Under_Test/RepeatMasker/MasterFile.out";
     #my $directory  = "/groups/ritg/repeats/Under_Test/RepeatMaskerFamily";
@@ -136,7 +100,10 @@ sub RepeatMaskerFamily
     if ($MasterFile !~ /MasterFile/)
     { die "Invalid MasterFile"; }
     
-    system ("mkdir $directory") ==0 or die "Invalid file path\n";
+    if (! -d $directory)
+    {
+        system ("mkdir $directory") ==0 or die "Invalid file path\n";
+    }
     ## create ~130 files, each file is for that family
     my %familyname_filehandle; ## the hash table for filenames and family names, undefined
     open (FH,$MasterFile) or die "can't open $MasterFile";
@@ -159,7 +126,7 @@ sub RepeatMaskerFamily
         }
         else
         {
-            print "$family_name\n";
+            #print "$family_name\n";
             open ( $filehandle, ">", "$directory/$filename");
             $familyname_filehandle{$family_name} = $filehandle;
             # open filehandles, filehandles names 
@@ -181,10 +148,11 @@ sub RepeatMaskerSuperFamily
     print "\nYour source RepeatMaskerFamily directory: $Families_directory\n";
 
     chomp ( my $SuperFamilyDirectory = $_[1] );
-    print "\nYour output RepeatMaskerSuperFamily directory: $SuperFamilyDirectory\n";
-    
-    system ("mkdir $SuperFamilyDirectory") ==0 or die "Invalid file path\n";
-    
+    print "Your output RepeatMaskerSuperFamily directory: $SuperFamilyDirectory\n";
+    if (! -d $SuperFamilyDirectory)
+    {
+        system ("mkdir $SuperFamilyDirectory") ==0 or die "Invalid file path\n";
+    }
     my @SuperFamilies = (
     "DNA_ELEMENTS",
     "LINEs",
@@ -259,7 +227,7 @@ sub RepeatMaskerSuperFamily
         }
         
         ## Open a family file each time
-        print "$Family_Name\t$SuperFamily_Name\n";
+        #print "$Family_Name\t$SuperFamily_Name\n";
         ### Write one family into its SuperFamily
         open (SRC,"$Families_directory/$Family_Name") or die "Can't open this family";
         open (WI,">>$SuperFamilyDirectory/$SuperFamily_Name") or die "Can't write into this superfamily";
@@ -284,10 +252,11 @@ sub RepeatMaskerSubFamily
     print "\nYour source RepeatMaskerFamily directory: $Families_directory\n";
 
     chomp ( my $SubFamilyDirectory = $_[1] );
-    print "\nYour output RepeatMaskerSubFamily directory: $SubFamilyDirectory\n";
-    
-    system ("mkdir $SubFamilyDirectory") == 0 or die "Invalid file path\n";
-    
+    print "Your output RepeatMaskerSubFamily directory: $SubFamilyDirectory\n";
+    if (! -d $SubFamilyDirectory)
+    {
+        system ("mkdir $SubFamilyDirectory") == 0 or die "Invalid file path\n";
+    }
     my @SubFamilies = (
     "DNA_ELEMENTS/D-OTHER",
     "DNA_ELEMENTS/hAT",
@@ -323,7 +292,10 @@ sub RepeatMaskerSubFamily
     
     foreach (@SubFamiliesFirstLayer)
     {
-        system ("mkdir $SubFamilyDirectory/$_") == 0 or die "Can't make directory\n";  
+        if (! -d "$SubFamilyDirectory/$_")
+        {
+            system ("mkdir $SubFamilyDirectory/$_") == 0 or die "Can't make directory\n";  
+        }
     }   
     
     ## Create 10+ SubFamiliesFiles
@@ -436,7 +408,7 @@ sub RepeatMaskerSubFamily
             $SubFamily_Name = $SubFamilies[15];
         }
         ## Open a family file each time
-        print "$Family_Name\t$SubFamily_Name\n";
+        #print "$Family_Name\t$SubFamily_Name\n";
         
         ### Write one family into its SuperFamily
         open (SRC,"$Families_directory/$Family_Name") or die "Can't open this family";
