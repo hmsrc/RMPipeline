@@ -53,8 +53,20 @@ Contact: Christopher_Botka@hms.harvard.edu
         Your output RepeatMaskerSubFamily directory: RMSub        
         RMSubFamily done
 
+2.2 GC_cli.pl
 
+Extracts all the repeats sequence from original supercontigs. Mainly for GC contents
 
+    usage:
+    
+        user@orchestra$ ./GC_cli.pl -M Masterfile -F Superfasta -f FamilyCategory -O Output 
+    
+        Masterfile          = Masterfile of the species, under RM raw directory
+        Superfasta          = Source genome data, in fasta Format
+        FamilyCategory      = [Optional] Editable family categorization file, based on user's knowledge
+        Output              = [Optional] Output directory
+        
+    
 
 
 
