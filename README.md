@@ -18,7 +18,7 @@ Contact: Christopher_Botka@hms.harvard.edu
 1, General background
 ======================
 
-[Poster] Global annotation and molecular evolutionary analysis of genomic repeats in the Painted Turtle, Chrysemys picta.
+[Poster Attached] Global annotation and molecular evolutionary analysis of genomic repeats in the Painted Turtle, Chrysemys picta.
 
 Quan Fang, Christopher Botka and Andrew Shedlock
 
@@ -61,7 +61,7 @@ Quan Fang, Christopher Botka and Andrew Shedlock
 2.2 GC_cli.pl
 ----------------------------------------------
 
-Extracts all the repeats sequence from original supercontigs. Mainly for GC contents
+Extracts all the repeats sequence from original supercontigs. Mainly for GC contents. The design diagram is attached as GC_cli.pdf
 
     usage:
     
@@ -81,7 +81,7 @@ Extracts all the repeats sequence from original supercontigs. Mainly for GC cont
 2.3 tbl.pl
 -----------------------------------------------
 
-Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl
+Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl. The design diagram is attached as tbl.pdf
     
     usage:
     
