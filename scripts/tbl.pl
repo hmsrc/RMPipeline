@@ -199,27 +199,6 @@ sub TBLMasterFile
 ###################################################################
 sub Help 
 {
-    
-=cut
-     open (FH,"/groups/ritg/repeats/scripts/Chrysemys_picta/RepeatMasker/cpicta_qf_1k_22.tbl") or die;
-     while (<FH>)
-     {
-     if ( $_ =~ /.+bp.+%$/)
-     {
-     if ($_ =~ /^(.+)\s+(\d+)\s+(\d+)\s+bp\s+(\d+\.\d+)\s+%$/)
-     {
-     print $1,"\n";
-     
-     }
-     elsif ($_ =~ /^(.+)\s+(\d+)\s+bp\s+(\d+\.\d+)\s+%$/)
-     {
-     print $1,"\n";
-     }
-     }
-     }
-=cut 
-    
-    
     print "
     .tbl files Parser,
     Component of RepeatMasker Data Analyzer, Version 1.00
