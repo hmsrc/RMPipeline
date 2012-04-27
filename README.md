@@ -18,11 +18,7 @@ Contact: Christopher_Botka@hms.harvard.edu, fangquans@gmail.com
 1, General background
 ======================
 
-[Poster Attached] Global annotation and molecular evolutionary analysis of genomic repeats in the Painted Turtle, Chrysemys picta.
-
-Quan Fang, Christopher Botka and Andrew Shedlock
-
-
+RepeatMasker is a program that screens DNA sequences for interspersed repeats and low complexity DNA sequences. We developed RMPipeline, as a secondary level repeats analysis pipeline. 
 
 
 ======================
@@ -130,6 +126,10 @@ Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl. The design 
                Low complexity:         200688        6490805 bp   0.2967 %
 
 
+======================
+3, Reference 
+======================
 
-
-
+[Poster] 
+Quan Fang, Christopher Botka and Andrew Shedlock. Global annotation and molecular evolutionary analysis
+of genomic repeats in the Painted Turtle, Chrysemys picta. 3rd International Conference/Workshop on Genomic Impact of Eukaryotic Transposable Elements. 
