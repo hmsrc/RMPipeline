@@ -1,6 +1,6 @@
 #!/usr/local/bin/perl
 
-#use strict;
+use strict;
 use warnings;
 #Command line processing.
 use Getopt::Long;
