@@ -71,6 +71,12 @@ Extracts all the repeats sequence from original supercontigs. Mainly for GC cont
             FamilyCategory      = [Optional] Editable family categorization file, based on user's knowledge
             Output              = [Optional] Output directory
         
+    FamilyCategory.txt is strictly a tab delimited file, "family    super-family    sub-family", for example:
+    
+        DNA     DNA ELEMENTS	D-OTHER
+        DNA	    DNA ELEMENTS	D-OTHER
+        DNA_Academ  DNA ELEMENTS	D-OTHER
+        DNA_Chapaev	DNA ELEMENTS	D-OTHER
     
 2.3 tbl.pl
 -----------------------------------------------
