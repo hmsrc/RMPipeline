@@ -1,4 +1,13 @@
 #!/usr/local/bin/perl
+#
+#
+#   Quan Fang
+#   fangquans@gmail.com
+#   Departments of Bioinformatics and Computer Science
+#   Boston University
+#   April 27
+#
+#
 
 use strict;
 use warnings;
