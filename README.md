@@ -29,7 +29,7 @@ Quan Fang, Christopher Botka and Andrew Shedlock
 2, Functional scripts 
 ======================
 
-2.1 family_cli.pl ((This file is not published yet))
+2.1 family_cli.pl
 ----------------------------------------------------
 
 (1) concatenates repeatmasker .out resutls into a master file, named MasterFile.out
@@ -58,7 +58,7 @@ Quan Fang, Christopher Botka and Andrew Shedlock
         Your output RepeatMaskerSubFamily directory: RMSub        
         RMSubFamily done
 
-2.2 GC_cli.pl (This file is not published yet)
+2.2 GC_cli.pl
 ----------------------------------------------
 
 Extracts all the repeats sequence from original supercontigs. Mainly for GC contents
@@ -72,8 +72,8 @@ Extracts all the repeats sequence from original supercontigs. Mainly for GC cont
             Output              = [Optional] Output directory
         
     
-2.3 tbl.pl (published April 25)
--------------------------------
+2.3 tbl.pl
+-----------------------------------------------
 
 Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl
     
