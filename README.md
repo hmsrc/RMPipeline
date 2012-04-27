@@ -117,7 +117,7 @@ Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl
                 Other (Mirage,             30           1907 bp   0.0001 %
                Rolling-circles              0              0 bp   0.0000 %
                  Unclassified:           9471        1465230 bp   0.0670 %
-    Total interspersed repeats:                    120511942 bp   5.5079 %
+    Total interspersedrepeats:                     120511942 bp   5.5079 %
                     Small RNA:          20136        2745203 bp   0.1255 %
                    Satellites:           2069         166911 bp   0.0076 %
                Simple repeats:         115056        4668582 bp   0.2134 %
