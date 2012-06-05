@@ -3,15 +3,15 @@ RMPipeline
 
 RepeatMasker Analysis Pipeline
 
-Authors: Quan Fang, Chris Botka, Amir Karger, Greg Cavanagh
+Authors: Andrew Shedlock, Quan Fang, Chris Botka, Amir Karger, Greg Cavanagh
 
 Affiliation: 
 
-The Research Information Technology Group (RITG), Harvard Medical School
+Research Computing, Harvard Medical School
 
 107 Avenue Louis Pasteur, Room 105, Boston MA 02115-5701
 
-Contact: Christopher_Botka@hms.harvard.edu, fangquans@gmail.com
+Contact: botka@hms.harvard.edu, shedlockam@cofc.edu, fangquans@gmail.com
 
 
 ======================
