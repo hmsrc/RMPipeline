@@ -133,6 +133,6 @@ Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl. The design 
 3, Reference 
 ======================
 
-[Poster](https://github.com/hmsrc/RMPipeline/blob/master/Asilomar_022412.pdf) 
+[Poster:](https://github.com/hmsrc/RMPipeline/blob/master/Asilomar_022412.pdf) 
 Quan Fang, Christopher Botka and Andrew Shedlock. Global annotation and molecular evolutionary analysis
 of genomic repeats in the Painted Turtle, Chrysemys picta. 3rd International Conference/Workshop on Genomic Impact of Eukaryotic Transposable Elements. 
