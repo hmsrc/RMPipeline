@@ -7,8 +7,11 @@ Authors: Andrew Shedlock, Quan Fang, Chris Botka, Amir Karger, Greg Cavanagh
 
 Affiliation: 
 
-Research Computing, Harvard Medical School
+College of Charleston, Department of Biology 
+Hollings Science Center 58 Coming Street, Room 216B
+Charleston, SC 29401 USA
 
+Research Computing, Harvard Medical School
 107 Avenue Louis Pasteur, Room 105, Boston MA 02115-5701
 
 Contact: botka@hms.harvard.edu, shedlockam@cofc.edu, fangquans@gmail.com
@@ -130,6 +133,6 @@ Summarize RepeatMasker raw data, concatenates into a MasterFile.tbl. The design 
 3, Reference 
 ======================
 
-[Poster] 
+[Poster](https://github.com/hmsrc/RMPipeline/blob/master/Asilomar_022412.pdf) 
 Quan Fang, Christopher Botka and Andrew Shedlock. Global annotation and molecular evolutionary analysis
 of genomic repeats in the Painted Turtle, Chrysemys picta. 3rd International Conference/Workshop on Genomic Impact of Eukaryotic Transposable Elements. 
